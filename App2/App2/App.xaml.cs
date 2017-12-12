@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App2.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,15 @@ namespace App2
 {
 	public partial class App : Application
 	{
-		public App ()
+               
+
+        public App ()
 		{
 			InitializeComponent();
-
-			MainPage = new App2.MainPage();
-		}
+                 
+            MainPage = new NavigationPage(new PasswordPage());
+                        
+        }
 
 		protected override void OnStart ()
 		{
@@ -30,5 +34,7 @@ namespace App2
 		{
 			// Handle when your app resumes
 		}
-	}
+
+        
+    }
 }
