@@ -28,7 +28,7 @@ namespace App2.View
             else if (PasswordEntry.Text == null) PasswordEntry.Focus();
             else if (!GlobalData.VerifyData(UsernameEntry.Text, PasswordEntry.Text))
             {
-                await DisplayAlert("Warning", " Username Or Password is Incorrect ", "Okay");
+                await DisplayAlert("Warning", " Username or Password is Incorrect ", "Okay");
             }
             else
             {

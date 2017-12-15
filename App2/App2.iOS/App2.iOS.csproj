@@ -128,4 +128,7 @@
       <Name>App2</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\front.png" />
+  </ItemGroup>
 </Project>
