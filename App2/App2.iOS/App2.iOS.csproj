@@ -131,4 +131,46 @@
   <ItemGroup>
     <AndroidResource Include="Resources\front.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\files.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\doc64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\copy64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\copy128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\doc128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\photo64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\photo128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\downloadcloud64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\downloadcloud128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mail64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mail128.png" />
+  </ItemGroup>
 </Project>

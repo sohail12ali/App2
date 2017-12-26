@@ -3,10 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App2"
              x:Class="App2.MainPage"
-             Title="">
+             Title="Home">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+
+        <Label  Text="Welcome to Xamarin.Forms!" 
+                VerticalOptions="Center"  
+                HorizontalOptions="CenterAndExpand"
+                FontAttributes="Bold"
+                FontSize="30"
+                TextColor="Black"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"/>
+        
+        <Grid ColumnSpacing="0" RowSpacing="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Source="doc128.png"
+                    Grid.Row="0" Grid.Column="0"/>
+            <Image Source="copy128.png"
+                   Grid.Row="0" Grid.Column="1"/>
+
+            <Image Source="photo128.png"
+                    Grid.Row="1" Grid.Column="0"/>
+            <Image Source="downloadcloud128.png"
+                   Grid.Row="1" Grid.Column="1"/>
+
+            <Image Source="images128.png"
+                    Grid.Row="2" Grid.Column="0"/>
+            <Image Source="mail128.png"
+                   Grid.Row="2" Grid.Column="1"/>
+
+        </Grid>
+    </StackLayout>
 
 </ContentPage>

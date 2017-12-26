@@ -105,6 +105,21 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Assets\front.png" />
+    <Content Include="Assets\copy128.png" />
+    <Content Include="Assets\copy64.png" />
+    <Content Include="Assets\doc128.png" />
+    <Content Include="Assets\doc64.png" />
+    <Content Include="Assets\downloadcloud128.png" />
+    <Content Include="Assets\downloadcloud64.png" />
+    <Content Include="Assets\files.png" />
+    <Content Include="Assets\images128.png" />
+    <Content Include="Assets\images64.png" />
+    <Content Include="Assets\logo.png" />
+    <Content Include="Assets\mail128.png" />
+    <Content Include="Assets\mail64.png" />
+    <Content Include="Assets\newdoc.png" />
+    <Content Include="Assets\photo128.png" />
+    <Content Include="Assets\photo64.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />
