@@ -19,13 +19,14 @@ namespace App2.View
         {
             InitializeComponent();
 
+           
         }
 
         public async void SubmitButtonClicked(Object sender, EventArgs args)
         {
 
-            if (UsernameEntry.Text == null) UsernameEntry.Focus();
-            else if (PasswordEntry.Text == null) PasswordEntry.Focus();
+            if (String.IsNullOrEmpty(UsernameEntry.Text)) UsernameEntry.Focus(); 
+            else if (String.IsNullOrEmpty(PasswordEntry.Text)) PasswordEntry.Focus();
             else if (!GlobalData.VerifyData(UsernameEntry.Text, PasswordEntry.Text))
             {
                 await DisplayAlert("Warning", " Username or Password is Incorrect ", "Okay");
