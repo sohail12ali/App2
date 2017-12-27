@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App2.View.OtherPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,9 +15,15 @@ namespace App2
         public MainPage()
         {
             InitializeComponent();
-
-            
+                           
 
         }
+
+        private void NewFormButtonClicked(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new BeforeAndAfterPage());
+        }
+
+
     }
 }

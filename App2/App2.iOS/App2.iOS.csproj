@@ -173,4 +173,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\mail128.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mailsend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\newdoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\editdoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\saved.png" />
+  </ItemGroup>
 </Project>

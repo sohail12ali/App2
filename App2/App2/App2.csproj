@@ -18,7 +18,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="View\PasswordPage.xaml">
+    <EmbeddedResource Update="View\FormPages\PasswordPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\OtherPages\BeforeAndAfterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\OtherPages\VehicleNumber.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
