@@ -1,4 +1,4 @@
-﻿using App2.View.OtherPages;
+﻿using App2.View.FormPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +21,7 @@ namespace App2
 
         private void NewFormButtonClicked(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new BeforeAndAfterPage());
+            Navigation.PushAsync(new AccidentScene());
         }
 
 

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.View.FormPages.AccidentScene">
+    <ContentPage.Content>
+        <StackLayout>
+    
+            <Label Text="Select Situation"
+                   FontSize="20"
+                    Margin="30,20,30,20"
+                   FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" />
+
+            <Picker x:Name="AccidentPicker" Title="Select"
+                    Margin="30,20,30,20"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="FillAndExpand"
+                    SelectedIndexChanged="ChangeEvent">
+                    
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Accident Scene</x:String>
+                        <x:String>After Accident</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+
+            </Picker>
+
+            <Label Text="Enter Vehicle Number"
+                   FontSize="20"
+                    Margin="30,20,30,20"
+                   FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" />
+
+            <Entry Placeholder="Vehicle Number"
+                   x:Name="VehicleNumberEntry"
+                   Style="{StaticResource EntryStyle}"
+                   TextColor="Black"
+                   />
+
+            <Button Text="Submit"
+                    Clicked="SubmitVehicleNumber"
+                    Style="{StaticResource NormalButtonStyle}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

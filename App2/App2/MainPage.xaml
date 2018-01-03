@@ -2,21 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App2"
-             x:Class="App2.MainPage"
-             Title="Welcome to Xamarin.Forms!">
+             x:Class="App2.MainPage">
 
-    <StackLayout >
+    <StackLayout BackgroundColor="AliceBlue">
 
-        <Label  Text="HOME" 
+        <Label  Text="Welcome to ClaimsPro" 
+                VerticalOptions="Center"  
+                HorizontalOptions="CenterAndExpand"
+                Margin="0,20,0,5"
+                FontSize="30"
+                FontFamily="Aldrich"/>
+
+        <Label  Text="Choose any option to proceed" 
                 VerticalOptions="CenterAndExpand"  
                 HorizontalOptions="CenterAndExpand"
-                FontSize="30"
-                TextColor="Black"
-                Grid.Row="0"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"/>
+                FontSize="20"
+                FontFamily="Aldrich"
+                />
 
-        <Grid ColumnSpacing="20" RowSpacing="30" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Grid ColumnSpacing="20" RowSpacing="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
@@ -29,74 +33,97 @@
             </Grid.ColumnDefinitions>
 
             <!--1st Row-->
-            <Image Source="newdoc.png"
-                   Margin="10,10,10,10"
-                   Scale="0.75"
-                    Grid.Row="0" Grid.Column="0">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer
-                        Tapped="NewFormButtonClicked"
-                        NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
+            
+            <StackLayout Grid.Row="0" Grid.Column="0" >
 
-            <Image Source="editdoc.png"
-                   Margin="10,10,10,10"
-                   Scale="0.75"
-                   Grid.Row="0" Grid.Column="1">
-                <Image.GestureRecognizers>
+                <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer
                         Tapped="NewFormButtonClicked"
                         NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
+                </StackLayout.GestureRecognizers>
+                
+                <Image Source="newdoc.png"
+                       Style="{StaticResource DeshboardImageStyle}"/>
+                <Label Text="New Claim"
+                       Style="{StaticResource DeshboardLabelStyle}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="1" >
+
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="NewFormButtonClicked"
+                        NumberOfTapsRequired="1"/>
+                </StackLayout.GestureRecognizers>
+
+                <Image Source="editdoc.png"
+                       Style="{StaticResource DeshboardImageStyle}"/>
+                <Label Text="Incomplete Forms"
+                       Style="{StaticResource DeshboardLabelStyle}"/>
+            </StackLayout>
+
+            
 
             <!--2nd Row-->
-            <Image Source="camera.png"
-                   Margin="10,10,10,10"
-                   Scale="0.75"
-                   Grid.Row="1" Grid.Column="0">
-                <Image.GestureRecognizers>
+            <StackLayout Grid.Row="1" Grid.Column="0">
+
+                <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer
                         Tapped="NewFormButtonClicked"
                         NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
+                </StackLayout.GestureRecognizers>
 
-            <Image Source="saved.png"
-                   Margin="10,10,10,10"
-                   Scale="0.75"
-                   Grid.Row="1" Grid.Column="1">
-                <Image.GestureRecognizers>
+                <Image Source="camera.png"
+                       Style="{StaticResource DeshboardImageStyle}"/>
+                <Label Text="Capture Images"
+                       Style="{StaticResource DeshboardLabelStyle}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Grid.Column="1" >
+
+                <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer
                         Tapped="NewFormButtonClicked"
                         NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
+                </StackLayout.GestureRecognizers>
 
+                <Image Source="saved.png"
+                       Style="{StaticResource DeshboardImageStyle}"/>
+                <Label Text="Capture Images"
+                       Style="{StaticResource DeshboardLabelStyle}"/>
+            </StackLayout>
 
+            
             <!--3rd Row-->
-            <Image Source="images.png"
-                   Margin="10,10,10,10"
-                   Scale="0.75"
-                   Grid.Row="2" Grid.Column="0">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer
-                        Tapped="NewFormButtonClicked"
-                        NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
+            <StackLayout Grid.Row="2" Grid.Column="0">
 
-            <Image Source="mailsend.png"
-                   Margin="10,10,10,10"
-                   Scale="0.75"
-                   Grid.Row="2" Grid.Column="1">
-                <Image.GestureRecognizers>
+                <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer
                         Tapped="NewFormButtonClicked"
                         NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
+                </StackLayout.GestureRecognizers>
+
+                <Image Source="images.png"
+                       Style="{StaticResource DeshboardImageStyle}"/>
+                <Label Text="View Images"
+                       Style="{StaticResource DeshboardLabelStyle}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.Column="1">
+
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="NewFormButtonClicked"
+                        NumberOfTapsRequired="1"/>
+                </StackLayout.GestureRecognizers>
+
+                <Image Source="mailsend.png"
+                       Style="{StaticResource DeshboardImageStyle}"/>
+                <Label Text="Contact Us"
+                       Style="{StaticResource DeshboardLabelStyle}"/>
+            </StackLayout>
+
+
 
         </Grid>
     </StackLayout>

@@ -1,5 +1,5 @@
 ﻿using App2.View;
-using App2.View.OtherPages;
+using App2.View.FormPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +17,10 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new PasswordPage());
-            //MainPage  = new  NavigationPage (new BeforeAndAfterPage());
+            //MainPage = new NavigationPage(new PasswordPage());
+            //MainPage = new NavigationPage(new AccidentScene());
             //MainPage = new NavigationPage(new VehicleNumber());
-            //MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage());
 
 
 

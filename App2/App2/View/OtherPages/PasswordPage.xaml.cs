@@ -18,8 +18,8 @@ namespace App2.View
         public PasswordPage()
         {
             InitializeComponent();
-
-           
+                    
+            
         }
 
         public async void SubmitButtonClicked(Object sender, EventArgs args)

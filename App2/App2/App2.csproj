@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.4.118" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
 
@@ -18,13 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="View\FormPages\PasswordPage.xaml">
+    <EmbeddedResource Update="View\FormPages\AccidentScene.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\OtherPages\BeforeAndAfterPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="View\OtherPages\VehicleNumber.xaml">
+    <EmbeddedResource Update="View\OtherPages\PasswordPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
