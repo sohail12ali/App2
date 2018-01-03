@@ -18,14 +18,14 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new PasswordPage());
+            //MainPage = new NavigationPage(new PasswordPage());
             
             
             //MainPage = new NavigationPage(new AccidentScene());
             //MainPage = new NavigationPage(new VehicleNumber());
             //MainPage = new NavigationPage(new MainPage());
             //MainPage = new NavigationPage(new NewClaim("Testing", "Default"));
-            //MainPage = new NavigationPage(new CaptureImage());
+            MainPage = new NavigationPage(new CaptureImage());
 
 
 

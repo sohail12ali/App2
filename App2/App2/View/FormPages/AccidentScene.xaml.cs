@@ -9,17 +9,18 @@ using Xamarin.Forms.Xaml;
 
 namespace App2.View.FormPages
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AccidentScene : ContentPage
-	{
-		public AccidentScene ()
-		{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class AccidentScene : ContentPage
+    {
+        public AccidentScene()
+        {
             BindingContext = this;
-			InitializeComponent ();
-		}
+            InitializeComponent();
+        }
+
+        public string PickerValue { get; set; } = null;
 
 
-        public string PickerValue { get; set; }
 
 
         private void ChangeEvent(Object sender, ValueChangedEventArgs args)
@@ -32,7 +33,7 @@ namespace App2.View.FormPages
 
         private async void SubmitVehicleNumber(Object sender, EventArgs args)
         {
-            if (!String.IsNullOrWhiteSpace(VehicleNumberEntry.Text))
+            if ((!String.IsNullOrWhiteSpace(VehicleNumberEntry.Text)) && !String.IsNullOrEmpty(PickerValue))
             {
                 await Navigation.PushAsync(new NewClaim(PickerValue, VehicleNumberEntry.Text));
                 //await DisplayAlert("Warning", "Working", "Okay");
@@ -40,6 +41,10 @@ namespace App2.View.FormPages
             }
             else
             {
+                if (String.IsNullOrEmpty(PickerValue))
+                {
+                    AccidentPicker.Focus();
+                }
                 VehicleNumberEntry.Focus();
             }
 
