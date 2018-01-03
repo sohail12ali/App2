@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="sqlite-net-pcl" Version="1.4.118" />
+    <PackageReference Include="Xam.Plugin.Media" Version="3.1.1" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
 
@@ -20,6 +21,12 @@
 
   <ItemGroup>
     <EmbeddedResource Update="View\FormPages\AccidentScene.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\FormPages\NewClaim.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\OtherPages\CaptureImage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\OtherPages\PasswordPage.xaml">

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.View.FormPages.NewClaim"
+             Title="New Forms">
+    <ContentPage.Content>
+        
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="Capture and save images of the Accident"
+                    Style="{StaticResource HeaderLabelStyle}"/>
+
+            <Button  Text="Capture Image"
+                     Clicked="CaptureImageButton"
+                     Style="{StaticResource NormalButtonStyle}"/>
+            <Label Text="OR"
+                    Style="{StaticResource DeshboardLabelStyle}"/>
+
+            <Button  Text="Use Saved Image"
+                     Clicked="UseSavedImageButton"
+                     Style="{StaticResource NormalButtonStyle}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

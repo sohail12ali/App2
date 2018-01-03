@@ -9,7 +9,12 @@ namespace App2.Helpers
     {
         private static string MyUsername { get; set; } = "sohail";
         private static string MyPassword { get; set; } = "1234";
- 
+
+        public static string VehicleNumber { get; set; }
+        public static string claimName { get; set; }
+
+
+
 
 
         public static bool VerifyData(string username, string password)

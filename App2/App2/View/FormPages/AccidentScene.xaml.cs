@@ -25,7 +25,7 @@ namespace App2.View.FormPages
         private void ChangeEvent(Object sender, ValueChangedEventArgs args)
         {
             PickerValue = AccidentPicker.SelectedItem.ToString();
-            DisplayAlert("Warning", PickerValue, "Okay");
+            //DisplayAlert("Warning", PickerValue, "Okay");
 
 
         }
@@ -34,8 +34,8 @@ namespace App2.View.FormPages
         {
             if (!String.IsNullOrWhiteSpace(VehicleNumberEntry.Text))
             {
-                // await Navigation.PushAsync(new );
-                await DisplayAlert("Warning", "Working", "Okay");
+                await Navigation.PushAsync(new NewClaim(PickerValue, VehicleNumberEntry.Text));
+                //await DisplayAlert("Warning", "Working", "Okay");
 
             }
             else

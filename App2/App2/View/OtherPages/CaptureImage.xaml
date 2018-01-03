@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.View.OtherPages.CaptureImage"
+             Title="Capture Images">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid ColumnSpacing="20" RowSpacing="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" >
+                    
+                </StackLayout>
+                
+
+                <ScrollOrientation>
+                    
+                </ScrollOrientation>
+                
+                
+                
+                
+                
+                <Button Text="Capture"
+                        Grid.Row="2" Grid.Column="0"
+                        Style="{StaticResource NormalButtonStyle}"/>
+
+                <Button Text="Done"
+                        Grid.Row="2" Grid.Column="1"
+                        Style="{StaticResource NormalButtonStyle}"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
