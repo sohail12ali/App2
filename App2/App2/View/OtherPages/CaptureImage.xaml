@@ -18,19 +18,24 @@
                 </Grid.ColumnDefinitions>
 
                 <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" >
-                    
+
                     <Image x:Name="PhotoImage"
                            HorizontalOptions="FillAndExpand"
                            VerticalOptions="FillAndExpand"/>
 
                 </StackLayout>
 
-                <ScrollView x:Name="ScrollLayout" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                <ScrollView IsClippedToBounds="True" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 
-
+                    <StackLayout 
+                        BackgroundColor="AliceBlue"
+                        HorizontalOptions="StartAndExpand"
+                        x:Name="ScrollLayout" 
+                        Orientation="Horizontal"
+                        >
+                    </StackLayout>
 
                 </ScrollView>
-                
 
                 <Button Text="Capture" Clicked="OnCaptured"
                         Grid.Row="2" Grid.Column="0"
@@ -42,5 +47,7 @@
 
             </Grid>
         </StackLayout>
+
+
     </ContentPage.Content>
 </ContentPage>
